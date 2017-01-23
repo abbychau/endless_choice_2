@@ -1,0 +1,21 @@
+doctype html
+html
+	head
+		title= title
+		link(rel='stylesheet', href='/stylesheets/style.css')
+		link(rel='shortcut icon',type="image/x-icon", href='/favicon.ico')
+		meta(http-equiv='Content-Type', content='text/html; charset=utf-8')
+		meta(http-equiv='x-ua-compatible', content='ie=8')
+		meta(name='keywords', content='文字遊戲, 選擇遊戲, 遊戲')
+		meta(name='description', content='無盡的選擇')
+		meta(name='viewport', content='width=device-width, minimum-scale=1.0, maximum-scale=1.0')
+
+
+	body
+		div(id='content')
+			block content
+		div(id='footer')
+			block footer
+
+		script(src='/javascripts/jquery-3.1.1.min.js', type='text/javascript')
+		block footerJs

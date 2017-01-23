@@ -1,0 +1,21 @@
+extends layout
+
+block content
+	if !pageId
+		h1= story.name
+		div(id='pageContent')
+			p= story.conclusion
+			p= story.author
+		btn(postToId='#{choice[1]}') 故事開始
+
+		script.
+			var variables = !{JSON.stringify(variableJson)}
+
+		div(class='choices hide')
+			for k, choice in choices
+				btn(postToId='#{choice[1]}' buttonId=k) #{choice[0]}
+
+
+block footerJs
+	script(src="/javascripts/require.js")
+	script.

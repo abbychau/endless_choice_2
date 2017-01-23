@@ -1,0 +1,9 @@
+extends layout
+
+block content
+	h1= title
+	table
+		each story in stories
+			tr(class='story')
+				td: a(href='/story/#{story.id}') #{story.name}
+block footer

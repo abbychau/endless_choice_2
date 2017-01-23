@@ -1,0 +1,16 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+a {
+  color: #00b7ff;
+}
+table tr td {
+  border-bottom: 1px solid #ccc;
+}
+table {
+  border: 1px solid #ccc;
+}
+.choices btn {
+  display: block;
+}
